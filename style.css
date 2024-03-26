@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+    outline: none;
+
+}
+body{
+    background:  url("./img/4283901_303.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+    
+    
+}
+.title{
+    margin-top: 20px;
+    margin-left: 550px;
+    
+    color: white;
+}
+
+    
+
+
+
+.container{
+    background-color: transparent 20px ;
+    border: 2px solid  #080808;
+    backdrop-filter:  blur(20px);
+    width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px auto 0;
+    
+    
+
+}
+.input-task{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    
+
+
+}
+
+.btn-add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-style: 10px;
+    background-color: #540268;
+    color: white;
+    font-size: 10px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700px;
+}
+
+.btn-add-task:hover{
+    opacity: 0.8;
+}
+
+.btn-add-task:active{
+    opacity: 0.6;
+}
+
+.list-task{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px rgba(0,0,0,.1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+
+}
+
+img{
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.task:hover img{
+    opacity: 1;
+
+
+}
+
+.done {
+    background-color: blue;
+    text-decoration: line-through;
+}
+
+@media screen and  (max-width: 800px){
+    .container {
+        width: 50%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .title{
+        
+       font-size: 10px;
+       line-height: 22px;
+       
+
+        
+
+
+    }
+    .input-task{
+        width: 50%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .btn-add-task{
+        width: 50%;
+        
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+
+
+
+
+
